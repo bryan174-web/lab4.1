@@ -8,7 +8,7 @@ Date: 10/1/2025
   <title>Photo Gallery</title>
   <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js"></script>
-  
+  <h1>Slides</h1>
  
   </head>
 
@@ -18,16 +18,41 @@ Date: 10/1/2025
 
   <img src="images/turtle1.jpg" id="myImg" width="400"  >
   <button onclick="run()" >Next Image</button>
+
+ <body> 
+  <div class="grandparent">
+    <div class="parent-1 parent">Parent 1
+    <div class="parent-2 parent">
+      <span class="child">child</span>
+    </div>
+  </div>
+  <p>The structured representation of a web page is called DOM, Document Object Model.  
+  defines the structure of a page and a way to interact with it.
+const parent1 = document.querySelector('.parent-1')  to select parent-1
+console.log(parent1)
+
+querySelectorAll only returns elements. It returns a node list, it only contains elements. It's
+similar to an html collection without live update
+
+console.log(parent1.parentNode) /*to get div class "grandparent" element
+
+document.getElementById()
+This is used to select an element by its ID. select an element by its ID. Documment is an object
+. It contains properties and methods and other rested objects. 
+getElementsByTagName they return an html collection
+
+console.log(parent1.childNodes) selects all childNodes
+
+ </p> 
   
-  
-   
+</body>   
 <footer>
   
 </footer>
  </div>    
   </header>
 The content of the document you see in the browser goes here.....
-</body>
+
 </html>
 
  
