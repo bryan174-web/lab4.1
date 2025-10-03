@@ -1,57 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Student Name: Bryan Sevilla
-Assignment Name: Index. for Lab 4:Changing the DOM
-Date: 10/1/2025
+Assignment Name: Index. for Lab 4:Changing the DOM part 2
+Date: 10/2/2025
 --> 
 <head>
-  <title>Photo Gallery</title>
+  <title>DOM Manipulation</title>
   <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js"></script>
-  <h1>Slides</h1>
  
   </head>
-
- 
   
-   
-
-  <img src="images/turtle1.jpg" id="myImg" width="400"  >
-  <button onclick="run()" >Next Image</button>
-
  <body> 
-  <div class="grandparent">
-    <div class="parent-1 parent">Parent 1
-    <div class="parent-2 parent">
-      <span class="child">child</span>
-    </div>
+  <div>
+    <span>Hello World 2 </span>
+    <span style="display: none;">Bye</span>
   </div>
-  <p>The structured representation of a web page is called DOM, Document Object Model.  
-  defines the structure of a page and a way to interact with it.
-const parent1 = document.querySelector('.parent-1')  to select parent-1
-console.log(parent1)
+div.innerHTML = "<strong>Hello World 2</strong>"
+ innerHTML to render html inside of a div or inside of any element 
 
-querySelectorAll only returns elements. It returns a node list, it only contains elements. It's
-similar to an html collection without live update
+<p>.toggle
+ its either going to rmove if it exists already or add it. Adds and removes </p>
 
-console.log(parent1.parentNode) /*to get div class "grandparent" element
+<p>getElementById()
+selcts and item according to its ID. It returns the element with the specified ID among all 
+elements of the document. </p>
 
-document.getElementById()
-This is used to select an element by its ID. select an element by its ID. Documment is an object
-. It contains properties and methods and other rested objects. 
-getElementsByTagName they return an html collection
+<p>querySelector()
+ The second method using CSS selectors.  It works the same way as querySelectorAll() but only
+returns the first mathching element. It returns null if no associated element can be found.</p> 
 
-console.log(parent1.childNodes) selects all childNodes
+<p>createTextNode()
+ creates a Text Node: It generates a new node that specifically contains plain text content. It
+takes a single string argument which represents the text content for the newly created Text node.</p>
 
- </p> 
-  
+<p>insertAdjacentHTML()
+ method to more precisely define the position of inserted elements. an existing element and pass
+it the position and a string of HTML characters that represent the new content to be added. </p>
+
+<p>addEventListener()
+Is used to attach an event handler to a specified element without overwritng existing event 
+handlers. It allows you to define a function that will be executed when a particular event occurs
+on that element </p>
+
+<p>nextSibling
+ returns the next node in the same tree level as a specified node. It is a read-only property that
+returns a node or null it there is no next sibling. </p>
+
+
+
 </body>   
-<footer>
+
   
-</footer>
- </div>    
-  </header>
-The content of the document you see in the browser goes here.....
 
 </html>
 
