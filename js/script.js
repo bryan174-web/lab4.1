@@ -1,54 +1,47 @@
 /* Bryan Sevilla
 date:10/1/2025
-assignment: JavaScript for Lab 4: Changing the DOM */
+assignment: JavaScript for Lab 4: Changing the DOM part 2*/
 
-var i = 0;
-var names = ['images/turtle1.jpg','images/turtle2.jpg','images/turtle3.jpg','images/turtle4.jpg','images/turtle5.jpg'
-  ,'images/turtle6.jpg','images/turtle7.jpg' , 'images/turtle8.jpg' , 'images/turtle9.jpg' ,'images/turtle10.jpg'
-];
-function run() {
-  document.getElementById("myImg").src = names[i++];
-  if (i === names.length) {
-    i = 0;
-    document.getElementById("myImg").src = names[0];
-  }
-}
-const h = document.head;
-const b = document.body; 
+const div =  document.createElement("div")
+body.append(div)
+/* appending elements */
+div.innerText = "Hello World"
 
-console.log(document.body.childNodes[1]);
+body.appendchild(div)
+/*allows you to append elements */
+console.log(div.textContent)
+console.log(div.innerText)
+/* innerText looks at the css to see is this actually visible on the screen, inner text displays text */
 
-const parent1 = document.querySelector('.parent-1') 
-/* to select parent-1*/
-console.log(parent1)
+div.innerHTML = "<strong>Hello World 2</strong>"
+/* innerHTML to render html inside of a div or inside of any element */
 
-querySelectorAll
- /*only returns elements. It returns a node list, it only contains elements. It's
-similar to an html collection without live update*/
+.toggle
+/* its either going to rmove if it exists already or add it. Adds and removes */
 
-console.log(parent1.parentNode)
- /*to get div class "grandparent" element*/
+getElementById()
+/* selcts and item according to its ID. It returns the element with the specified ID among all 
+elements of the document. */
 
-document.getElementById()
-/* This is used to select an element by its ID. select an element by its ID. Documment is an object
-. It contains properties and methods and other rested objects. */
-getElementsByTagName 
-/*they return an html collection*/
+querySelector()
+/* The second method using CSS selectors.  It works the same way as querySelectorAll() but only
+returns the first mathching element. It returns null if no associated element can be found. */
 
-console.log(parent1.childNodes)
- /*selects all childNodes*/
+createTextNode()
+/* creates a Text Node: It generates a new node that specifically contains plain text content. It
+takes a single string argument which represents the text content for the newly created Text node.*/
 
-document.createElement()
-/* append an element. You get a list of elements. This adds element to html*/
+insertAdjacentHTML()
+/* method to more precisely define the position of inserted elements. an existing element and pass
+it the position and a string of HTML characters that represent the new content to be added. */
 
-innerText
-/* looks at the css to see is this actually visible on the screen, inner text displays text */
+addEventListener()
+/* Is used to attach an event handler to a specified element without overwritng existing event 
+handlers. It allows you to define a function that will be executed when a particular event occurs
+on that element */
 
-innerHTML
-/* to render html inside of a div or inside of any element */
-
-previousSibling
-/* selects the first node that comes before the current element */
-
+nextSibling
+/* returns the next node in the same tree level as a specified node. It is a read-only property that
+returns a node or null it there is no next sibling. */
 
 
